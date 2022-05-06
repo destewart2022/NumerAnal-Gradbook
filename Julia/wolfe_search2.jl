@@ -1,28 +1,28 @@
 """
     wolfe_search2(f,df,x,p,alpha0,c1,c2,f0,df0,trace) --> alpha,fval,dfval,nfe,nge
+
 Performs search for point satisfying the two strong Wolfe conditions:
+``f(x+\\alpha p) \\leq f(x) + c1\\alpha p^T\\nabla f(0)	``	(WC1)
+``|p^T\\nabla f(x+\\alpha p)| <= c2|p^T\\nabla f(x)|``	    	(WC2b)
 
-f(x+alpha p) <= f(x) + c1.alpha p'.grad f(0)		(WC1)
-|p'.grad f(x+alpha p)| <= c2|p'.grad f(x)|	    	(WC2b)
-
-alpha0 is the initial value of alpha in the search.  If alpha0
+* `alpha0` is the initial value of alpha in the search.  If `alpha0`
 	satisfies the Wolfe conditions, then the search stops there.
-f0 is f(x) at the initial x.
-df0 is grad f(x) at the initial x.
-f is the objective function.
-df is the gradient function.
-If trace is non-zero then print out information about the process
+* `f0` is ``f(x)`` at the initial `x`.
+* `df0` is ``\\nabla f(x)`` at the initial `x`.
+* `f` is the objective function.
+* `df` is the gradient function.
+If `trace` is non-zero then print out information about the process
 
 The algorithm follows that of Wright & Nocedal "Numerical Optimization", pp. 60-62, section 3.4
 
 Returns
-	alpha	-- step length parameter
-	fval	-- function value at end
-	dfval	-- gradient value at end
-	nfe     -- # function evaluations
-	nge	    -- # gradient evaluations
+*	`alpha`	-- step length parameter
+*	`fval`	-- function value at end
+*	`dfval`	-- gradient value at end
+*	`nfe`   -- \# function evaluations
+*	`nge`	-- \# gradient evaluations
 
-Note: V is an inner product space over R. Then f:V->R and df:V->V.
+Note: `V` is an inner product space over `R`. Then ``f:V\to R`` and ``df:V\\to V``.
 """
 function wolfe_search2(f::Function,df::Function,x::V,p::V,alpha0::R,
     c1::R,c2::R,f0::R,df0::V;trace::Integer=0) where {R,V}
