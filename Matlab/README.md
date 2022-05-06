@@ -16,14 +16,14 @@ Note that there may be differences due to
 * regfalsi.m -- Regula Falsi method on an interval
 * hybrid1.m -- a simple hybrid method
 
-### Interpolation
+### [Interpolation](interpolation)
 * lagrange_interp.m -- computes Lagrange interpolation polynomials
 * divdif.m -- computes divided differences suitable for interpolation
 * dd_interp.m -- computes polynomial interpolant using divided difference table from divdif.m
 * dd_hermite.m -- creates divided difference table for Hermite polynomial interpolation (interpolates 1st derivative values as well as function values)
 * dd_hinterp.m -- computes Hermite interpolant using results of dd_hermite.m
 
-### Integration
+### [Integration](integration)
 These methods assume that the integrand can accept vectors of evaluation points and produce the vector of function values for the given evaluation points.
 * rectangle.m -- composite rectangle rule for integration over an interval
 * trapezoidal.m -- composite trapezoidal rule for integration over an interval
@@ -32,7 +32,7 @@ These methods assume that the integrand can accept vectors of evaluation points 
 * adapt_simp.m -- adaptive Simpson's rule to integrate a function over an interval with specified accuracy (also uses adapt_simp1.m)
 * romberg.m -- Romberg's method using repeated extrapolation to estimate the integral over an interval
 
-### ODE initial value problem solvers
+### [ODE initial value problem solvers](ODE)
 Note that these are all fixed step size, rather than adaptive step-size methods. Using a fixed step size is not only useful for testing things like the order of accuracy of a method, but also for other tasks such as equation solving and optimization as adaption methods can introduce "noise" into function evaluations if that evaluation depends on the result of the ODE solver. 
 * euler.m -- Euler's method (explicit)
 * heun.m -- Heun's method
