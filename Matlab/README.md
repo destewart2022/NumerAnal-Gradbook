@@ -8,7 +8,7 @@ Note that there may be differences due to
 * Efficient use of function values
 * variations in programming/implementation style
 
-### Solving equations
+### [Solving equations](solvers)
 * bisect.m -- bisection method on an interval
 * newton.m -- Newton's method (single variable & multivariable)
 * gnewton.m -- guarded Newton method (single variable & multivariable)
