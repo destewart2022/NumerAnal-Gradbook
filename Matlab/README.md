@@ -9,7 +9,7 @@ Note that there may be differences due to
 * variations in programming/implementation style
 
 ### [Solving equations](solvers)
-* bisect.m -- bisection method on an interval
+* `bisect.m` -- bisection method on an interval
 * newton.m -- Newton's method (single variable & multivariable)
 * gnewton.m -- guarded Newton method (single variable & multivariable)
 * secant.m -- secant (derivative free) method
