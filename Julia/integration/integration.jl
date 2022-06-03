@@ -5,7 +5,7 @@ A collection of integration methods.
 """
 module Integration
 
-export rectangle, trapezoidal, simpson
+export rectangle, trapezoidal, simpson, romberg
 
 """
     rectangle(f::Function,a::T,b::T,n::Int) where {T}
@@ -70,6 +70,36 @@ end
 
 using LinearAlgebra
 
+"""
+    romberg(f::Function,a::T,b::T,nlevels::Int) where {T}
+
+Uses Romberg's method of estimating the integral of `f` over `[a,b]`.
+The number of levels used is `nlevels` and the number of function evaluations is `2^{nlevals+1}-2`
+"""
+function romberg(f::Function,a::T,b::T,nlevels::Int) where {T}
+    n = nlevels
+    rtable = zeros(n,n);
+
+    # Evaluate trapezoidal integrals
+
+    # Evaluate simple trapezoidal rule
+    rtable[1,1] = (b-a)*(f(a)+f(b))/2
+
+    # Now evaluate at the other points
+    for k = 2:n
+        pow2km1 = 2^(k-1);
+        h = (b-a)/pow2km1;
+        rtable[k,1] = rtable[k-1,1]/2 + h*sum(f(a+i*h) for i in 1:2:pow2km1);
+    end
+
+    # Now construct the Romberg table
+    for k = 2:n
+        for i = k:n
+            rtable[i,k] = (4^(k-1)*rtable[i,k-1]-rtable[i-1,k-1])/(4^(k-1)-1);
+        end
+    end
+    rtable
+end
 
 
 end # module
