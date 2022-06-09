@@ -6,5 +6,6 @@ These include the general solvers
 * Newton method [`newton.m`](newton.m) and a guarded Newton method [`gnewton.m`](gnewton.m)
 * Secant method [`secant.m`](secant.m)
 * Regula Falsi [`regfalsi.m`](regfalsi.m)
+
 and a specific solver
 * for solving quadratic scalar equations [`quadratic_solver.m`](quadratic_solver.m)
