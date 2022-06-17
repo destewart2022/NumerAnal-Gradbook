@@ -1,0 +1,3 @@
+# Equation solvers in Python
+
+Various nonlinear equation solvers are implemented in ...
