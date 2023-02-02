@@ -5,4 +5,4 @@ This repository will contain codes in Matlab and Julia as a companion to *Numeri
 
 There are codes in [Julia](Julia), [Matlab](Matlab), and [Python](Python) for basic operations for solving equations, interpolation & approximation, computing integrals, and solving ordinary differential equations (ODEs).
 
-Coverage is not and will never be complete. But there is an [errata.md](errata).
+Coverage is not and will never be complete. But there is an [errata](errata.md).
