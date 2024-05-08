@@ -6,9 +6,9 @@
   * p. 86, Sec 2.1, Ex 7: The functions *k* and *h* are given external functions.
   * p. 96, Sec 2.2.1: Last line of 2nd paragraph: the *a*'s should be *b*'s.
   * p. 108, Algo. 19, line 8: $\ell_k$ should be $\ell_{k-1}$
-  * p. 129, equation (2.4.14): The last set should be $span\{r_0,Ar_0,...,A^k r_0\}$.
+  * p. 129, equation (2.4.14): The last set should be $span\\{r_0,Ar_0,...,A^k r_0\\}$.
   * p. 131, line 5: $x_k-x_0$ should be $x_{k+1}-x_0$
-  * p. 158, line 4 from bottom: parentheses should be used for $\rho$: $\rho^{[j]}u_^{(j)} = A u_^{(j-1)}$ should be  $\rho^{(j)}u_^{(j)} = A u_^{(j-1)}$.
+  * p. 158, line 4 from bottom: parentheses should be used for $\rho$: $\rho^{[j]}u_^{(j)} = A u_^{(j-1)}$ should be  $\rho^{(j)}u_^{(j)} = A u^{(j-1)}$.
   * p. 165, 3rd paragraph of text, line 8 of paragraph: "Section 2.2.2.4" should be "Section 2.2.2.5"
 * Chapter 3: Solving nonlinear equations
   * p. 205, Exercise (10) part (e), line 3: "$LM\Vert f(x_k)\Vert > \frac12$" should have the inequality reversed: "$LM\Vert f(x_k)\Vert < \frac12$"
