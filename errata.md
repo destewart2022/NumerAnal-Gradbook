@@ -11,7 +11,7 @@
   * p. 158, line 4 from bottom: parentheses should be used for $\rho$: $\rho^{[j]}u^{(j)} = A u^{(j-1)}$ should be  $\rho^{(j)}u^{(j)} = A u^{(j-1)}$.
   * p. 165, 3rd paragraph of text, line 8 of paragraph: "Section 2.2.2.4" should be "Section 2.2.2.5"
 * Chapter 3: Solving nonlinear equations
-  * p. 205, Exercise (10) part (e), line 3: "$LM\Vert f(x_k)\Vert > \frac12$" should have the inequality reversed: "$LM\Vert f(x_k)\Vert < \frac12$"
+  * p. 205, Exercise (10) part (e), line 3: \"$LM\Vert f(x_k)\Vert > \frac12$\" should have the inequality reversed: \"$LM\Vert f(x_k)\Vert < \frac12$\"
 * Chapter 4: Approximation and interpolation
 * Chapter 5: Integration and differentiation
   * p. 382, paragraph 1, line 6 of paragraph: "is perhaps 20 because" should be "is perhaps 20 times that of the original code, because"
