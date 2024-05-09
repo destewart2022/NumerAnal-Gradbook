@@ -14,6 +14,7 @@
   * p. 205, Exercise (10) part (e), line 3: $LM\Vert f(x_k)\Vert > \frac12$ should have the inequality reversed: $LM\Vert f(x_k)\Vert < \frac12$
 * Chapter 4: Approximation and interpolation
   * p. 237, line 2 (in Thm. 4.3): the reference to (4.1.10) should be to (4.1.7). The two equations (4.1.7) and (4.1.10) are, however, essentially equivalent.
+  * p. 249, Section 4.1,2, line 9 of paragraph 1: "while the best approximation by polynomials" should be "while the best approximation error by polynomials"
 * Chapter 5: Integration and differentiation
   * p. 382, paragraph 1, line 6 of paragraph: "is perhaps 20 because" should be "is perhaps 20 times that of the original code, because"
 * Chapter 6: Differential equations
