@@ -2,7 +2,7 @@
 
 * Preface
 * Chapter 1: Basics of Numerical Computation
-  * p. 44, Ex (10): The mean $\mu(S)$ should be equal to $\sum_{i\in S}x_i/\n(S)$, not just $\sum_{i\in S}x_i$.
+  * p. 44, Ex (10): The mean $\mu(S)$ should be equal to $\sum_{i\in S}x_i/n(S)$, not just $\sum_{i\in S}x_i$.
 * Chapter 2: Computing with matrices and vectors
   * p. 86, Sec 2.1, Ex 7: The functions *k* and *h* are given external functions.
   * p. 96, Sec 2.2.1: Last line of 2nd paragraph: the *a*'s should be *b*'s.
