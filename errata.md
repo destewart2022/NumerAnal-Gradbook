@@ -12,6 +12,7 @@
   * p. 158, line 4 from bottom: parentheses should be used for $\rho$: $\rho^{[j]}u^{(j)} = A u^{(j-1)}$ should be  $\rho^{(j)}u^{(j)} = A u^{(j-1)}$.
   * p. 165, 3rd paragraph of text, line 8 of paragraph: "Section 2.2.2.4" should be "Section 2.2.2.5"
 * Chapter 3: Solving nonlinear equations
+  * P. 184, Ex (7): The interval should be $\[\frac12\times10^{-3},1\]$ instead of $\[10^{-3},1\]$.
   * p. 202, line 6 from bottom, middle of displayed equation: $-2f(x)\nabla f(x)f(x)^{-1}f(x)$ should be $-2f(x)^T\nabla f(x)\nabla f(x)^{-1}f(x)$
   * p. 205, Exercise (10) part (e), line 3: $LM\Vert f(x_k)\Vert > \frac12$ should have the inequality reversed: $LM\Vert f(x_k)\Vert < \frac12$
 * Chapter 4: Approximation and interpolation
